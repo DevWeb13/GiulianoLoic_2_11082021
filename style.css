@@ -2,19 +2,31 @@
   border: 1px solid red;
 }
 
+:root {
+  --colorPrimary: #0065fc;
+  --colorSecondary: #deebff;
+  --colorThird: #f2f2f2;
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("./Policy/static/Raleway-Regular.ttf");
+}
 body {
   margin: 0 40px;
+  font-family: "Raleway-Regular", serif, sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
+/* ************************ HEADER ******************** */
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 100px;
+  height: 75px;
   /* position: relative; */
 }
 
@@ -25,7 +37,7 @@ header {
 }
 
 #logo img {
-  height: 40px;
+  height: 35px;
 }
 
 nav {
@@ -39,17 +51,72 @@ nav {
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 150px;
+  width: 125px;
   color: black;
+  font-size: 0.8rem;
 }
 
 .nav:hover {
-  border-top: 2px solid #0065fc;
+  border-top: 2px solid var(--colorPrimary);
   position: relative;
   bottom: 1px;
-  color: #0065fc;
+  color: var(--colorPrimary);
 }
 
 .blue {
   color: #0065fc;
+  font-weight: 900;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* ********************** FORM ******************* */
+form {
+  margin-top: 15px;
+}
+label {
+  padding: 8.5px 12.5px 9.5px 12.5px;
+  background: var(--colorThird);
+  border-radius: 10px 0 0 10px;
+}
+label i {
+  font-size: 0.8rem;
+}
+
+input {
+  height: 32px;
+  width: 180px;
+  position: relative;
+  right: 4px;
+  padding-left: 15px;
+  font-weight: 900;
+  border-top: 1px solid var(--colorThird);
+  border-bottom: 1px solid var(--colorThird);
+  border-right: 0;
+  border-left: 0;
+}
+
+input::placeholder {
+  color: black;
+}
+
+button {
+  height: 36px;
+  margin: 0;
+  background: var(--colorPrimary);
+  color: white;
+  position: relative;
+  right: 8px;
+  font-weight: 900;
+  padding: 0 10px;
+  border-radius: 0 10px 10px 0;
+  border: none;
 }
