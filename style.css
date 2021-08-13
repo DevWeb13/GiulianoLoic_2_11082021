@@ -50,7 +50,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 90%;
   width: 125px;
   color: black;
   font-size: 0.8rem;
@@ -119,6 +119,7 @@ button {
   padding: 0 10px;
   border-radius: 0 10px 10px 0;
   border: none;
+  cursor: pointer;
 }
 
 /* ********************** FILTERS ********************** */
@@ -137,17 +138,22 @@ button {
   align-items: center;
 }
 
+.filtersType:hover {
+  cursor: not-allowed;
+}
+
 .filtersType i {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--colorPrimary);
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background-color: var(--colorSecondary);
   border-radius: 50%;
   font-size: 0.9rem;
   z-index: 2;
+  border: 4px solid var(--colorThird);
 }
 
 h2 {
@@ -163,4 +169,24 @@ h2 {
   border-radius: 0 20px 20px 0;
   white-space: nowrap;
   margin-right: 10px;
+}
+
+/* ******************** INFORMATION ************* */
+#information {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#information i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: var(--colorPrimary);
+  font-size: 0.7rem;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--colorThird);
 }
