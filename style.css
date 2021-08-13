@@ -199,8 +199,10 @@ main {
   justify-content: space-between;
 }
 
-#accommodation,
-#mostPopular {
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   background-color: var(--colorThird);
   border-radius: 15px;
   padding: 30px 2% 30px 2%;
@@ -208,19 +210,12 @@ main {
 
 #accommodation {
   width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.accommodationInline {
+.accommodationCardsInline {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.accommodation a {
-  display: flex;
 }
 
 .card {
@@ -262,10 +257,7 @@ main {
 
 #mostPopular {
   width: 30%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 #mostPopularTitle {
@@ -277,27 +269,24 @@ main {
 
   margin-bottom: 14px;
 }
-.card--inline {
+.card__column {
   width: 100%;
   max-width: 350px;
   height: 125px;
   margin: 30px 0 10px 0;
 }
-.card--inline a {
+.card__column a {
   display: flex;
   height: 100%;
 }
 
-.cardPhoto--inline {
+.cardPhoto__column {
   height: 100%;
   width: 40%;
   border-radius: 15px 0 0 15px;
 }
 
-/* .cardPhoto--inline img {
-} */
-
-.cardText--inline {
+.cardText__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
