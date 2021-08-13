@@ -1,6 +1,6 @@
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 :root {
   --colorPrimary: #0065fc;
@@ -19,6 +19,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* ************************ HEADER ******************** */
@@ -131,6 +132,7 @@ button {
 
 #filtersType {
   display: flex;
+  margin-left: 20px;
 }
 
 .filtersType {
@@ -158,7 +160,7 @@ button {
 
 h2 {
   font-size: 0.9rem;
-  margin: 0 20px 0 0;
+  margin: 0;
 }
 
 .filtersType h2 {
@@ -189,4 +191,118 @@ h2 {
   width: 20px;
   border-radius: 50%;
   border: 1px solid var(--colorThird);
+}
+
+/* ****************** MAIN *************************** */
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+#accommodation,
+#mostPopular {
+  background-color: var(--colorThird);
+  border-radius: 15px;
+  padding: 30px 2% 30px 2%;
+}
+
+#accommodation {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 5px;
+}
+
+.accommodationInline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accommodation a {
+  display: flex;
+}
+
+.card {
+  height: 175px;
+  width: 30%;
+  max-width: 250px;
+  border: 4px solid white;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 1px 19px 0px #bcbcbc;
+  color: black;
+}
+
+.cardPhoto {
+  height: 60%;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.cardPhoto img {
+  height: 100%;
+  width: 100%;
+}
+
+.cardText {
+  padding: 5px 5px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+.stars {
+  color: var(--colorPrimary);
+  font-size: 0.6rem;
+}
+
+.colorThird {
+  color: var(--colorThird);
+}
+
+#mostPopular {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mostPopularTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 350px;
+
+  margin-bottom: 14px;
+}
+.card--inline {
+  width: 100%;
+  max-width: 350px;
+  height: 125px;
+  margin: 30px 0 10px 0;
+}
+.card--inline a {
+  display: flex;
+  height: 100%;
+}
+
+.cardPhoto--inline {
+  height: 100%;
+  width: 40%;
+  border-radius: 15px 0 0 15px;
+}
+
+/* .cardPhoto--inline img {
+} */
+
+.cardText--inline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  white-space: normal;
+  margin-left: 10px;
 }
