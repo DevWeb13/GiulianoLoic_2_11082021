@@ -209,7 +209,7 @@ section {
 }
 
 #accommodation {
-  width: 60%;
+  width: 65%;
 }
 
 .accommodationCardsInline {
@@ -239,6 +239,7 @@ section {
 .cardPhoto img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .cardText {
@@ -256,7 +257,7 @@ section {
 }
 
 #mostPopular {
-  width: 30%;
+  width: 25%;
   align-items: center;
 }
 
