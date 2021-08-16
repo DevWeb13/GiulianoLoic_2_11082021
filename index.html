@@ -69,9 +69,9 @@
     </div>
 
     <main>
-      <section id="accommodation">
+      <section id="accommodations">
         <h1>Hébergements à Marseille</h1>
-        <div class="accommodationCardsInline">
+        <div class="cardsInline">
           <div class="card">
             <a href="#">
               <div class="cardPhoto">
@@ -137,7 +137,7 @@
             </a>
           </div>
         </div>
-        <div class="accommodationCardsInline">
+        <div class="cardsInline">
           <div class="card">
             <a href="#">
               <div class="cardPhoto">
@@ -205,20 +205,20 @@
         <h2>Afficher plus</h2>
       </section>
 
-      <section id="mostPopular">
-        <div id="mostPopularTitle">
+      <section id="mostPopulars">
+        <div id="mostPopularsTitle">
           <h1>Les plus populaires</h1>
           <i class="fas fa-chart-line"></i>
         </div>
-        <div class="card cardColumn">
+        <div class="card">
           <a href="#">
-            <div class="cardPhoto cardPhotoColumn">
+            <div class="cardPhoto">
               <img
                 src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                 alt="Hôtel Le soleil du matin"
               />
             </div>
-            <div class="cardText cardTextColumn">
+            <div class="cardText">
               <h2>Hôtel Le soleil du matin</h2>
               <p>Nuit à partir de 128€</p>
               <div class="stars">
@@ -231,15 +231,15 @@
             </div>
           </a>
         </div>
-        <div class="card cardColumn">
+        <div class="card">
           <a href="#">
-            <div class="cardPhoto cardPhotoColumn">
+            <div class="cardPhoto">
               <img
                 src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                 alt="Au coeur de l'eau Chambres d'hôtes"
               />
             </div>
-            <div class="cardText cardTextColumn">
+            <div class="cardText">
               <h2>Au coeur de l'eau Chambres d'hôtes</h2>
               <p>Nuit à partir de 71€</p>
               <div class="stars">
@@ -252,15 +252,15 @@
             </div>
           </a>
         </div>
-        <div class="card cardColumn">
+        <div class="card">
           <a href="#">
-            <div class="cardPhoto cardPhotoColumn">
+            <div class="cardPhoto">
               <img
                 src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                 alt=""
               />
             </div>
-            <div class="cardText cardTextColumn">
+            <div class="cardText">
               <h2>Hôtel Tout bleu et Blanc</h2>
               <p>Nuit à partir de 68€</p>
               <div class="stars">
@@ -278,45 +278,93 @@
 
     <section id="activity">
       <h1>Activités à Marseille</h1>
-      <div id="activitycards">
-        <div class="activityOnecard">
-          <a href="#"
-            ><div class="ActivityPhoto"></div>
-            <h2>Vieux Port</h2></a
-          >
-        </div>
-        <div class="activityTwocards">
-          <div class="activityOnecard">
+      <div class="activityCardsContainer">
+        <div class="oneCardContainer">
+          <div class="card">
             <a href="#"
-              ><div class="ActivityPhoto"></div>
-              <h2>Fort de Pomègues</h2></a
-            >
-          </div>
-          <div class="activityOnecard">
-            <a href="#"
-              ><div class="ActivityPhoto"></div>
-              <h2>Îles du frioul</h2></a
-            >
+              ><div class="cardPhoto">
+                <img
+                  src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                  alt="Vieux Port"
+                />
+              </div>
+              <div class="cardText">
+                <h2>Vieux Port</h2>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="activityOnecard">
-          <a href="#"
-            ><div class="ActivityPhoto"></div>
-            <h2>Parc National des Calanques</h2></a
-          >
-        </div>
-        <div class="activityTwocards">
-          <div class="activityOnecard">
+
+        <div class="twoCardsContainer">
+          <div class="card" id="fortPomegues">
             <a href="#"
-              ><div class="ActivityPhoto"></div>
-              <h2>Notre-Dame-de-la-Garde</h2></a
-            >
+              ><div class="cardPhoto">
+                <img
+                  src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="cardText">
+                <h2>Fort de Pomègues</h2>
+              </div>
+            </a>
           </div>
-          <div class="activityOnecard">
+          <div class="card">
             <a href="#"
-              ><div class="ActivityPhoto"></div>
-              <h2>Parc Longchamp</h2></a
-            >
+              ><div class="cardPhoto">
+                <img
+                  src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="cardText">
+                <h2>Îles du frioul</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="oneCardContainer">
+          <div class="card">
+            <a href="#"
+              ><div class="cardPhoto">
+                <img
+                  src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="cardText">
+                <h2>Parc National des Calanques</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="twoCardsContainer">
+          <div class="card" id="notreDameDeLaGarde">
+            <a href="#"
+              ><div class="cardPhoto">
+                <img
+                  src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                  alt="Notre-Dame-de-la-Garde"
+                />
+              </div>
+              <div class="cardText">
+                <h2>Notre-Dame-de-la-Garde</h2>
+              </div>
+            </a>
+          </div>
+          <div class="card" id="parcLongchamp">
+            <a href="#"
+              ><div class="cardPhoto">
+                <img
+                  src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                  alt="Parc Longchamp"
+                />
+              </div>
+              <div class="cardText">
+                <h2>Parc Longchamp</h2>
+              </div>
+            </a>
           </div>
         </div>
       </div>
