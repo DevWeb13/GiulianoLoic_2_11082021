@@ -22,6 +22,10 @@ a {
   color: black;
 }
 
+img {
+  object-fit: cover;
+}
+
 /* ************************ HEADER ******************** */
 header {
   display: flex;
@@ -208,11 +212,11 @@ section {
   padding: 30px 2% 30px 2%;
 }
 
-#accommodation {
+#accommodations {
   width: 65%;
 }
 
-.accommodationCardsInline {
+.cardsInline {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,7 +243,6 @@ section {
 .cardPhoto img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 
 .cardText {
@@ -256,38 +259,37 @@ section {
   color: var(--colorThird);
 }
 
-#mostPopular {
+#mostPopulars {
   width: 25%;
   align-items: center;
 }
 
-#mostPopularTitle {
+#mostPopularsTitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   max-width: 350px;
-
   margin-bottom: 14px;
 }
-.cardColumn {
+#mostPopulars .card {
   width: 100%;
   max-width: 350px;
   height: 125px;
   margin: 30px 0 10px 0;
 }
-.cardColumn a {
+#mostPopulars .card a {
   display: flex;
   height: 100%;
 }
 
-.cardPhotoColumn {
+#mostPopulars .cardPhoto {
   height: 100%;
   width: 40%;
   border-radius: 15px 0 0 15px;
 }
 
-.cardTextColumn {
+#mostPopulars .cardText {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -295,3 +297,91 @@ section {
   white-space: normal;
   margin-left: 10px;
 }
+
+/* **************** ACTIVITY ********************** */
+#activity {
+  margin-top: 50px;
+  padding: 0;
+  background-color: white;
+}
+
+#activity h1 {
+  margin-bottom: 30px;
+}
+
+.activityCardsContainer {
+  display: flex;
+
+  justify-content: space-between;
+  height: 500px;
+}
+
+.oneCardContainer,
+.twoCardsContainer {
+  width: 23%;
+}
+
+#activity .card {
+  width: 100%;
+  border: none;
+  margin: 0;
+  display: flex;
+  max-width: 400px;
+}
+
+.oneCardContainer .card {
+  height: 100%;
+}
+
+.twoCardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .twoCardsContainer .card {
+  height: 48%;
+} */
+
+#fortPomegues {
+  height: 55%;
+}
+#notreDameDeLaGarde {
+  height: 36%;
+}
+#parcLongchamp {
+  height: 56%;
+}
+
+.oneCardContainer .cardPhoto {
+  height: 90%;
+}
+
+.twoCardsContainer .cardPhoto {
+  height: 80%;
+}
+
+.twoCardsContainer a {
+  width: 100%;
+}
+
+#activity .cardText {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  white-space: normal;
+  margin: 0 15px;
+}
+
+.oneCardContainer .cardText {
+  height: 10%;
+}
+
+.twoCardsContainer .cardText {
+  height: 20%;
+}
+
+/* .twoCardsContainer {
+  display: flex;
+  flex-direction: column;
+} */
