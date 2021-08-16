@@ -339,18 +339,8 @@ section {
   justify-content: space-between;
 }
 
-/* .twoCardsContainer .card {
+.twoCardsContainer .card {
   height: 48%;
-} */
-
-#fortPomegues {
-  height: 55%;
-}
-#notreDameDeLaGarde {
-  height: 36%;
-}
-#parcLongchamp {
-  height: 56%;
 }
 
 .oneCardContainer .cardPhoto {
@@ -370,7 +360,9 @@ section {
   display: flex;
   align-items: center;
   white-space: normal;
+
   margin: 0 15px;
+  /* height: 50px; */
 }
 
 .oneCardContainer .cardText {
