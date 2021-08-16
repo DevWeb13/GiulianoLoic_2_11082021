@@ -13,8 +13,11 @@
   src: url("./Policy/static/Raleway-Regular.ttf");
 }
 body {
-  margin: 0 40px;
   font-family: "Raleway-Regular", serif, sans-serif;
+}
+
+#principalContainer {
+  margin: 0 40px;
 }
 
 a {
@@ -340,15 +343,15 @@ section {
 }
 
 .twoCardsContainer .card {
-  height: 48%;
+  height: 47%;
 }
 
 .oneCardContainer .cardPhoto {
-  height: 90%;
+  height: 450px;
 }
 
 .twoCardsContainer .cardPhoto {
-  height: 80%;
+  height: 190px;
 }
 
 .twoCardsContainer a {
@@ -362,7 +365,7 @@ section {
   white-space: normal;
 
   margin: 0 15px;
-  /* height: 50px; */
+  min-height: 50px;
 }
 
 .oneCardContainer .cardText {
@@ -373,7 +376,17 @@ section {
   height: 20%;
 }
 
-/* .twoCardsContainer {
+/* **************** FOOTER *************** */
+footer {
+  margin-top: 50px;
+  padding: 40px 280px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--colorThird);
+}
+
+.footerContent {
   display: flex;
   flex-direction: column;
-} */
+  line-height: 50px;
+}
