@@ -392,3 +392,105 @@ footer {
   flex-direction: column;
   line-height: 50px;
 }
+
+/* ******************* RESPONSIVE ********************* */
+
+/* ******************** < 1040px *********************** */
+
+@media screen and (max-width: 1040px) {
+  #principalContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 2031px;
+  }
+  /* ******************** MAIN ************************** */
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ****************** ACCOMMODATIONS ******************** */
+  #accommodations {
+    width: 100%;
+    padding: 30px 15px;
+    margin-bottom: 20px;
+  }
+
+  #accommodations h2,
+  #accommodations .card {
+    margin-bottom: 30px;
+  }
+
+  /* ********************* MOSTPOPULARS ******************* */
+  #mostPopulars {
+    width: 100%;
+  }
+
+  .mostPopularsCardsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #mostPopularsTitle {
+    max-width: 90%;
+  }
+
+  #mostPopulars .card {
+    width: 30%;
+  }
+
+  /* ******************* ACTIVITY *********************** */
+  #activity {
+    width: 100%;
+  }
+
+  #activity .twoCardsContainer .card {
+    width: 49%;
+  }
+
+  .activityCardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oneCardContainer,
+  .twoCardsContainer {
+    margin-bottom: 20px;
+    height: 185px;
+    width: 100%;
+  }
+
+  .oneCardContainer a {
+    width: 100%;
+  }
+
+  .oneCardContainer .card {
+    min-width: 100%;
+  }
+
+  .twoCardsContainer .cardPhoto,
+  .oneCardContainer .cardPhoto {
+    height: 150px;
+  }
+
+  .twoCardsContainer .cardText,
+  .oneCardContainer .cardText {
+    height: 35px;
+    justify-content: center;
+  }
+
+  .twoCardsContainer {
+    flex-direction: row;
+  }
+
+  .twoCardsContainer .card {
+    height: 100%;
+  }
+
+  /* ****************** FOOTER ************************ */
+  footer {
+    padding: 40px;
+    justify-content: space-around;
+  }
+}
