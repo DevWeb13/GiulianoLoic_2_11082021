@@ -397,7 +397,7 @@ footer {
 
 /* ******************** < 1040px *********************** */
 
-@media screen and (max-width: 1040px) {
+@media (max-width: 1040px) {
   #principalContainer {
     display: flex;
     align-items: center;
@@ -492,5 +492,27 @@ footer {
   footer {
     padding: 40px;
     justify-content: space-around;
+  }
+}
+
+/* ********************** < 881px ************************* */
+@media (max-width: 881px) {
+  #principalContainer {
+    height: 2376px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .mostPopularsCardsContainer {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  #mostPopulars .card {
+    width: 100%;
+    max-width: 90%;
   }
 }
