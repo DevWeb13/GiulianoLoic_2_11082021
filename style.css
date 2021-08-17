@@ -217,7 +217,7 @@ section {
   flex-direction: column;
   background-color: var(--colorThird);
   border-radius: 15px;
-  padding: 30px 2% 30px 2%;
+  padding: 30px 15px;
 }
 
 #accommodations {
@@ -402,15 +402,13 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 2031px;
   }
-  /* ******************** MAIN ************************** */
+
   main {
     flex-direction: column;
     align-items: center;
   }
 
-  /* ****************** ACCOMMODATIONS ******************** */
   #accommodations {
     width: 100%;
     padding: 30px 15px;
@@ -422,7 +420,6 @@ footer {
     margin-bottom: 30px;
   }
 
-  /* ********************* MOSTPOPULARS ******************* */
   #mostPopulars {
     width: 100%;
   }
@@ -440,9 +437,9 @@ footer {
     width: 30%;
   }
 
-  /* ******************* ACTIVITY *********************** */
   #activity {
     width: 100%;
+    margin-top: 30px;
   }
 
   #activity .twoCardsContainer .card {
@@ -452,6 +449,7 @@ footer {
   .activityCardsContainer {
     flex-direction: column;
     align-items: center;
+    height: 100%;
   }
 
   .oneCardContainer,
@@ -488,8 +486,8 @@ footer {
     height: 100%;
   }
 
-  /* ****************** FOOTER ************************ */
   footer {
+    margin-top: 0;
     padding: 40px;
     justify-content: space-around;
   }
@@ -497,14 +495,16 @@ footer {
 
 /* ********************** < 881px ************************* */
 @media (max-width: 881px) {
-  #principalContainer {
-    height: 2376px;
-  }
-
   main {
     width: 100%;
   }
 
+  #filtersType {
+    flex-wrap: wrap;
+  }
+  .filtersType {
+    margin-bottom: 10px;
+  }
   .mostPopularsCardsContainer {
     flex-direction: column;
     width: 100%;
@@ -514,5 +514,40 @@ footer {
   #mostPopulars .card {
     width: 100%;
     max-width: 90%;
+  }
+}
+
+/* ************************ < 670px *********************** */
+@media (max-width: 670px) {
+  .cardsInline {
+    flex-direction: column;
+  }
+
+  #accommodations .card {
+    width: 100%;
+    min-width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .footerContent {
+    align-items: center;
+  }
+}
+
+/* ********************* < 510px ********************* */
+@media (max-width: 509px) {
+  .twoCardsContainer {
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  #activity .twoCardsContainer .card {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
