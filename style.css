@@ -102,7 +102,7 @@ h3 {
   margin: 0;
 }
 
-span {
+#fontWeight {
   font-weight: 200;
 }
 
@@ -113,7 +113,9 @@ p {
 
 /* ********************** FORM ******************* */
 form {
+  display: flex;
   margin-top: 20px;
+  flex-wrap: nowrap;
 }
 label {
   padding: 8.5px 12.5px 9.5px 12.5px;
@@ -153,6 +155,10 @@ button {
   border-radius: 0 10px 10px 0;
   border: none;
   cursor: pointer;
+}
+
+#loupe {
+  display: none;
 }
 
 /* ********************** FILTERS ********************** */
@@ -617,7 +623,7 @@ footer {
   .nav {
     width: 50%;
   }
-  /*-------------------------------*/
+
   .cardsInline {
     flex-direction: column;
   }
@@ -639,15 +645,29 @@ footer {
 
 /* ********************* < 510px ********************* */
 @media (max-width: 509px) {
+  button {
+    border-radius: 10px;
+    width: 36px;
+  }
+  #rechercher {
+    display: none;
+  }
+
+  #loupe {
+    display: block;
+  }
   .twoCardsContainer {
     flex-direction: column;
     height: 100%;
-
     margin-bottom: 0;
   }
   #activity .twoCardsContainer .card {
     min-width: 100%;
     margin-bottom: 20px;
+  }
+  .twoCardsContainer .cardText,
+  .oneCardContainer .cardText {
+    justify-content: initial;
   }
 
   footer,
