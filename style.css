@@ -615,9 +615,8 @@ footer {
   }
 
   .blue:hover {
-    border: none;
     /* Evite le décalage du text du à la bordure */
-    bottom: 1px !important;
+    border-bottom: 1px solid transparent;
   }
 
   .nav {
