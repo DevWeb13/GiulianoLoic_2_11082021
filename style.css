@@ -18,11 +18,14 @@
 /* Application de la police pour tout le body */
 body {
   font-family: "Raleway-Regular", serif, sans-serif;
+  /* width: 1440px; */
+  /* width: 375px; */
+  margin: 0;
 }
 
 /* Container pour appliquer une marge à l'ensemble du document sauf au footer */
 #principalContainer {
-  margin: 0 40px;
+  margin: 0 50px;
 }
 
 a {
@@ -41,7 +44,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 75px;
+  height: 130px;
 }
 
 #logo {
@@ -52,7 +55,7 @@ header {
 }
 
 #logo img {
-  height: 80%;
+  height: 50px;
 }
 
 nav {
@@ -89,17 +92,19 @@ nav {
 }
 
 h1 {
-  margin: 20px 0 10px 0;
-  font-size: 1.4rem;
+  margin: 0px 0 10px 0;
+  font-size: 1.35rem;
 }
 
 h2 {
-  font-size: 1.2rem;
-  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 0 0 26px 0;
 }
 h3 {
-  font-size: 0.9rem;
   margin: 0;
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 #fontWeight {
@@ -108,7 +113,6 @@ h3 {
 
 p {
   margin: 0;
-  font-size: 0.8rem;
 }
 
 /* ********************** FORM ******************* */
@@ -118,20 +122,24 @@ form {
   flex-wrap: nowrap;
 }
 label {
-  padding: 8.5px 12.5px 9.5px 12.5px;
   background: var(--colorThird);
   border-radius: 10px 0 0 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 label i {
-  font-size: 0.8rem;
+  font-size: 20px;
 }
 
 input {
-  height: 32px;
-  width: 180px;
+  height: 46px;
+  width: 235px;
   position: relative;
   right: 4px;
-  padding-left: 15px;
+  padding-left: 19px;
   font-weight: 900;
   border-top: 1px solid var(--colorThird);
   border-bottom: 1px solid var(--colorThird);
@@ -141,10 +149,12 @@ input {
 
 input::placeholder {
   color: black;
+  font-size: 1.1rem;
 }
 
 button {
-  height: 36px;
+  height: 50px;
+  width: 95px;
   margin: 0;
   background: var(--colorPrimary);
   color: white;
@@ -165,12 +175,16 @@ button {
 #filters {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 33px;
+}
+
+#filters h2 {
+  margin: 0;
 }
 
 #filtersType {
   display: flex;
-  margin-left: 20px;
+  margin-left: 33px;
 }
 
 .filtersType {
@@ -187,24 +201,26 @@ button {
   align-items: center;
   justify-content: center;
   color: var(--colorPrimary);
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   background-color: var(--colorSecondary);
   border-radius: 50%;
   font-size: 0.9rem;
   z-index: 2;
-  border: 4px solid var(--colorThird);
 }
 
 .filtersType h3 {
   position: relative;
   right: 20px;
-  padding: 8px 15px 8px 25px;
+  height: 44px;
+  padding: 0px 15px 0px 30px;
   border: 3px solid var(--colorThird);
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 25px 25px 0;
   white-space: nowrap;
   margin-right: 10px;
-  font-size: 0.9rem;
+
+  display: flex;
+  align-items: center;
 }
 
 /* ******************** INFORMATION ************* */
@@ -221,8 +237,8 @@ button {
   margin-right: 10px;
   color: var(--colorPrimary);
   font-size: 0.7rem;
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   border-radius: 50%;
   border: 1px solid var(--colorThird);
 }
@@ -231,6 +247,7 @@ button {
 main {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 section {
@@ -239,11 +256,11 @@ section {
   flex-direction: column;
   background-color: var(--colorThird);
   border-radius: 15px;
-  padding: 30px 15px;
+  padding: 46px 40px;
 }
 
 #accommodations {
-  width: 65%;
+  width: 60%;
 }
 
 .cardsInline {
@@ -254,13 +271,14 @@ section {
 
 .card {
   display: flex;
-  height: 185px;
+  height: 200px;
   width: 30%;
   border: 4px solid white;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 1px 19px 0px #bcbcbc;
   color: black;
+  margin-bottom: 26px;
 }
 
 .card a {
@@ -283,6 +301,7 @@ section {
   padding: 5px 10px;
   line-height: 23px;
   white-space: nowrap;
+  font-size: 0.9rem;
 }
 .stars {
   color: var(--colorPrimary);
@@ -295,7 +314,8 @@ section {
 
 #mostPopulars {
   width: 25%;
-  align-items: center;
+
+  /* align-items: center; */
 }
 
 #mostPopularsTitle {
@@ -303,21 +323,24 @@ section {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 350px;
-  margin-bottom: 14px;
+  /* max-width: 350px; */
+}
+
+#mostPopulars .fa-chart-line {
+  font-size: 1.4rem;
 }
 
 #mostPopularsCardsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 90%;
 }
 
 #mostPopulars .card {
   width: 100%;
-  max-width: 350px;
-  height: 125px;
-  margin: 30px 0 10px 0;
+  height: 129px;
 }
 #mostPopulars .card a {
   display: flex;
@@ -326,7 +349,7 @@ section {
 
 #mostPopulars .cardPhoto {
   height: 100%;
-  width: 40%;
+  width: 148px;
   border-radius: 15px 0 0 15px;
 }
 
@@ -341,7 +364,7 @@ section {
 
 /* **************** ACTIVITY ********************** */
 #activity {
-  margin-top: 50px;
+  margin-top: 65px;
   padding: 0;
   background-color: white;
 }
@@ -354,7 +377,7 @@ section {
   display: flex;
 
   justify-content: space-between;
-  height: 500px;
+  height: 445px;
 }
 
 .oneCardContainer,
@@ -367,7 +390,6 @@ section {
   border: none;
   margin: 0;
   display: flex;
-  max-width: 400px;
 }
 
 .oneCardContainer .card {
@@ -385,11 +407,11 @@ section {
 }
 
 .oneCardContainer .cardPhoto {
-  height: 450px;
+  height: 390px;
 }
 
 .twoCardsContainer .cardPhoto {
-  height: 185px;
+  height: 155px;
 }
 
 .twoCardsContainer a {
@@ -397,24 +419,25 @@ section {
 }
 
 #activity .cardText {
-  padding: 0 10px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   white-space: normal;
+  height: 50px;
 }
 
-.oneCardContainer .cardText {
-  height: 10%;
+/* .oneCardContainer .cardText {
+  height: 55px;
 }
 
 .twoCardsContainer .cardText {
-  height: 20%;
-}
+  height: 55px;
+} */
 
 /* **************** FOOTER *************** */
 footer {
-  margin-top: 50px;
-  padding: 40px 280px 40px 40px;
+  margin-top: 62px;
+  padding: 32px 393px 32px 50px;
   display: flex;
   justify-content: space-between;
   background-color: var(--colorThird);
@@ -423,14 +446,14 @@ footer {
 .footerContent {
   display: flex;
   flex-direction: column;
-  line-height: 50px;
+  line-height: 37px;
 }
 
 /* ******************* RESPONSIVE ********************* */
 
-/* ******************** < 1040px *********************** */
+/* ******************** < 1200px *********************** */
 
-@media (max-width: 1040px) {
+@media (max-width: 1200px) {
   #principalContainer {
     display: flex;
     align-items: center;
@@ -448,7 +471,7 @@ footer {
 
   #accommodations {
     width: 100%;
-    padding: 30px 15px;
+
     margin-top: 20px;
     order: 2;
   }
@@ -468,17 +491,17 @@ footer {
     width: 100%;
   }
 
-  #mostPopularsTitle {
-    max-width: 90%;
-  }
-
   #mostPopulars .card {
-    width: 30%;
+    width: 32%;
   }
 
   #activity {
     width: 100%;
     margin-top: 30px;
+  }
+
+  #activity .card {
+    height: 200px;
   }
 
   #activity .twoCardsContainer .card {
@@ -494,7 +517,7 @@ footer {
   .oneCardContainer,
   .twoCardsContainer {
     margin-bottom: 20px;
-    height: 185px;
+    height: 200px;
     width: 100%;
   }
 
@@ -532,8 +555,8 @@ footer {
   }
 }
 
-/* ********************** < 881px ************************* */
-@media (max-width: 881px) {
+/* ********************** < 992px ************************* */
+@media (max-width: 992px) {
   main {
     width: 100%;
   }
@@ -565,45 +588,42 @@ footer {
   }
 }
 
-/* ************************ < 670px *********************** */
-@media (max-width: 670px) {
+/* ************************ < 768px *********************** */
+@media (max-width: 768px) {
   #principalContainer {
     margin: 0;
   }
 
   header {
-    width: 100%;
-    height: 125px;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    /* width: 100%; */
+    height: 114px;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    /* flex-direction: row; */
     position: relative;
+    margin-bottom: 61px;
   }
 
   #logo,
   #inscription {
-    height: 60%;
+    height: 104px;
     width: 50%;
+    padding: 0 5%;
   }
 
-  #logo img {
-    height: 60%;
+  #logo {
+    margin-bottom: 7px;
   }
 
   #inscription {
     justify-content: flex-end;
   }
-  .blue {
-    justify-content: flex-end;
-    padding-right: 10px;
-  }
 
   nav {
-    height: 40%;
     order: 2;
     position: absolute;
-    top: 60%;
+    top: 60px;
     width: 100%;
   }
 
@@ -621,14 +641,86 @@ footer {
 
   .nav {
     width: 50%;
+    height: 50px;
+  }
+
+  h1 {
+    margin-bottom: 18px;
+  }
+  h1,
+  #fontWeight,
+  form,
+  #filters,
+  #information {
+    margin-right: 21px;
+    margin-left: 21px;
+  }
+
+  form {
+    margin-top: 40px;
+  }
+
+  button {
+    border-radius: 10px;
+    width: 50px;
+  }
+
+  #rechercher {
+    display: none;
+  }
+  #loupe {
+    display: block;
+    font-size: 18px;
+  }
+
+  #information {
+    margin: 24px 21px 37px 21px;
+  }
+  main {
+    margin: 0;
+  }
+
+  #mostPopulars {
+    align-items: center;
+  }
+
+  #mostPopularsTitle {
+    width: 90%;
+  }
+
+  #mostPopulars i {
+    margin-bottom: 26px;
   }
 
   .cardsInline {
     flex-direction: column;
   }
 
-  #accommodations .card {
+  #accommodations {
+    background-color: white;
+    margin-top: 0;
+  }
+
+  #accommodations h2 {
+    margin-left: 20px;
+  }
+  #margin {
+    margin: 20px 0 0 20px;
+  }
+  #accommodations .card,
+  #mostPopulars .card {
     width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .oneCardContainer,
+  .twoCardsContainer {
+    width: 90%;
+    height: 200px;
+  }
+
+  #activity h2 {
+    margin-left: 20px;
   }
 
   footer {
@@ -642,19 +734,8 @@ footer {
   }
 }
 
-/* ********************* < 510px ********************* */
-@media (max-width: 509px) {
-  button {
-    border-radius: 10px;
-    width: 36px;
-  }
-  #rechercher {
-    display: none;
-  }
-
-  #loupe {
-    display: block;
-  }
+/* ********************* < 576px ********************* */
+@media (max-width: 576px) {
   .twoCardsContainer {
     flex-direction: column;
     height: 100%;
@@ -673,5 +754,6 @@ footer {
   .footerContent {
     align-items: initial;
     padding-top: 10px;
+    margin-top: 15px;
   }
 }
