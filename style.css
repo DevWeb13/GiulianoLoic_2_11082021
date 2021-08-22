@@ -18,8 +18,6 @@
 /* Application de la police pour tout le body */
 body {
   font-family: "Raleway-Regular", serif, sans-serif;
-  /* width: 1440px; */
-  /* width: 375px; */
   margin: 0;
 }
 
@@ -329,6 +327,7 @@ section {
 
 #mostPopulars .fa-chart-line {
   font-size: 1.4rem;
+  margin-bottom: 26px;
 }
 
 #mostPopularsCardsContainer {
@@ -681,16 +680,16 @@ footer {
     margin: 0;
   }
 
+  section {
+    padding: 46px 0;
+  }
+
   #mostPopulars {
     align-items: center;
   }
 
   #mostPopularsTitle {
     width: 90%;
-  }
-
-  #mostPopulars i {
-    margin-bottom: 26px;
   }
 
   .cardsInline {
@@ -756,5 +755,26 @@ footer {
     align-items: initial;
     padding-top: 10px;
     margin-top: 15px;
+  }
+}
+
+/* ********************* <350px ****************** */
+
+@media (max-width: 350px) {
+  h1,
+  #fontWeight,
+  form,
+  #filters,
+  #information {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  input {
+    width: 158px;
+  }
+
+  #mostPopulars .cardText {
+    padding: 0;
   }
 }
