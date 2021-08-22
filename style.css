@@ -1,7 +1,3 @@
-/* * {
-  border: 1px solid red;
-} */
-
 /* Déclarations de variables */
 :root {
   --colorPrimary: #0065fc;
@@ -40,8 +36,6 @@ img {
 /* ************************ HEADER ******************** */
 header {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   height: 130px;
 }
 
@@ -49,7 +43,6 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100%;
 }
 
 #logo img {
@@ -59,7 +52,6 @@ header {
 nav {
   display: flex;
   align-items: center;
-  height: 100%;
 }
 
 .nav {
@@ -67,8 +59,7 @@ nav {
   align-items: center;
   justify-content: center;
   height: 99%;
-  width: 125px;
-  color: black;
+  width: 150px;
 }
 
 .nav:hover {
@@ -86,7 +77,6 @@ nav {
 #inscription {
   display: flex;
   align-items: center;
-  height: 100%;
 }
 
 h1 {
@@ -106,6 +96,8 @@ h3 {
 }
 
 #fontWeight {
+  margin-bottom: 26px;
+  font-size: 1rem;
   font-weight: 200;
 }
 
@@ -116,9 +108,8 @@ p {
 /* ********************** FORM ******************* */
 form {
   display: flex;
-  margin-top: 20px;
-  flex-wrap: nowrap;
 }
+
 label {
   background: var(--colorThird);
   border-radius: 10px 0 0 10px;
@@ -128,15 +119,13 @@ label {
   align-items: center;
   justify-content: center;
 }
+
 label i {
   font-size: 20px;
 }
 
 input {
-  height: 46px;
-  width: 235px;
-  position: relative;
-  right: 4px;
+  width: 228px;
   padding-left: 19px;
   font-weight: 900;
   border-top: 1px solid var(--colorThird);
@@ -152,13 +141,10 @@ input::placeholder {
 }
 
 button {
-  height: 50px;
   width: 95px;
   margin: 0;
   background: var(--colorPrimary);
   color: white;
-  position: relative;
-  right: 8px;
   font-weight: 900;
   padding: 0 10px;
   border-radius: 0 10px 10px 0;
@@ -190,6 +176,7 @@ button {
   display: flex;
   align-items: center;
 }
+
 .filtersType:hover {
   cursor: not-allowed;
   color: red;
@@ -204,7 +191,6 @@ button {
   height: 50px;
   background-color: var(--colorSecondary);
   border-radius: 50%;
-  font-size: 0.9rem;
   z-index: 2;
 }
 
@@ -217,7 +203,6 @@ button {
   border-radius: 0 25px 25px 0;
   white-space: nowrap;
   margin-right: 10px;
-
   display: flex;
   align-items: center;
 }
@@ -302,6 +287,7 @@ section {
   white-space: nowrap;
   font-size: 0.9rem;
 }
+
 .stars {
   color: var(--colorPrimary);
   font-size: 0.6rem;
@@ -313,8 +299,6 @@ section {
 
 #mostPopulars {
   width: 25%;
-
-  /* align-items: center; */
 }
 
 #mostPopularsTitle {
@@ -322,7 +306,6 @@ section {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  /* max-width: 350px; */
 }
 
 #mostPopulars .fa-chart-line {
@@ -375,9 +358,7 @@ section {
 
 .activityCardsContainer {
   display: flex;
-
   justify-content: space-between;
-  height: 445px;
 }
 
 .oneCardContainer,
@@ -389,7 +370,6 @@ section {
   width: 100%;
   border: none;
   margin: 0;
-  display: flex;
 }
 
 .oneCardContainer .card {
@@ -425,14 +405,6 @@ section {
   white-space: normal;
   height: 50px;
 }
-
-/* .oneCardContainer .cardText {
-  height: 55px;
-}
-
-.twoCardsContainer .cardText {
-  height: 55px;
-} */
 
 /* **************** FOOTER *************** */
 footer {
@@ -471,7 +443,6 @@ footer {
 
   #accommodations {
     width: 100%;
-
     margin-top: 20px;
     order: 2;
   }
@@ -564,18 +535,22 @@ footer {
   #principalContainer {
     align-items: initial;
   }
+
   #filters {
     flex-direction: column;
     align-items: initial;
   }
+
   #filtersType {
     flex-wrap: wrap;
     margin: 0;
   }
+
   .filtersType {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   #mostPopularsCardsContainer {
     flex-direction: column;
     width: 100%;
@@ -595,12 +570,8 @@ footer {
   }
 
   header {
-    /* width: 100%; */
     height: 114px;
-    /* justify-content: space-between; */
     align-items: center;
-    /* flex-wrap: nowrap; */
-    /* flex-direction: row; */
     position: relative;
     margin-bottom: 61px;
   }
@@ -623,7 +594,7 @@ footer {
   nav {
     order: 2;
     position: absolute;
-    top: 60px;
+    top: 97px;
     width: 100%;
   }
 
@@ -654,6 +625,10 @@ footer {
   #information {
     margin-right: 21px;
     margin-left: 21px;
+  }
+
+  #fontWeight {
+    margin-bottom: 0;
   }
 
   form {
@@ -704,9 +679,11 @@ footer {
   #accommodations h2 {
     margin-left: 20px;
   }
+
   #margin {
     margin: 20px 0 0 20px;
   }
+
   #accommodations .card,
   #mostPopulars .card {
     width: 90%;
@@ -741,10 +718,12 @@ footer {
     height: 100%;
     margin-bottom: 0;
   }
+
   #activity .twoCardsContainer .card {
     min-width: 100%;
     margin-bottom: 20px;
   }
+
   .twoCardsContainer .cardText,
   .oneCardContainer .cardText {
     justify-content: initial;
