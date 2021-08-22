@@ -145,6 +145,7 @@ input {
   border-bottom: 1px solid var(--colorThird);
   border-right: 0;
   border-left: 0;
+  font-size: 1.1rem;
 }
 
 input::placeholder {
@@ -164,7 +165,7 @@ button {
   padding: 0 10px;
   border-radius: 0 10px 10px 0;
   border: none;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 #loupe {
