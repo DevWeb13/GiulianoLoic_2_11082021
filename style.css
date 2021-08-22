@@ -329,6 +329,7 @@ section {
 
 #mostPopulars .fa-chart-line {
   font-size: 1.4rem;
+  margin-bottom: 26px;
 }
 
 #mostPopularsCardsContainer {
@@ -681,16 +682,16 @@ footer {
     margin: 0;
   }
 
+  section {
+    padding: 46px 0;
+  }
+
   #mostPopulars {
     align-items: center;
   }
 
   #mostPopularsTitle {
     width: 90%;
-  }
-
-  #mostPopulars i {
-    margin-bottom: 26px;
   }
 
   .cardsInline {
